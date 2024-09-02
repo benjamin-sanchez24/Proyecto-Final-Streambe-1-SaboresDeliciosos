@@ -27,23 +27,29 @@ body{
     display: flex;
     justify-content: center;
 }
-.grid-inicio{
-    background-color: blue;
+.grid-inicio {
+    margin-top: 10vh;
+    margin-left: 10vw;
     width: 80vw;
-    height: 60vh;
+    margin-bottom: 20vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.cosa{
-    border: 5px solid black;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+.cosa1 {
+    height: 80vh;
     background-color: red;
-    height: 30vh;
-    width: 35vw;
-}
-.cosa1{
-    border: 5px solid black;
+     grid-area: 1 / 1 / 3 / 2; 
+    }
+.cosa2 { 
+    height: 37vh;
     background-color: red;
-    height: 60vh;
-    width: 35vw;
+    grid-area: 1 / 2 / 2 / 3; 
 }
+.cosa3 {
+    height: 37 vh; 
+    background-color: red;
+    grid-area: 2 / 2 / 3 / 3; }
