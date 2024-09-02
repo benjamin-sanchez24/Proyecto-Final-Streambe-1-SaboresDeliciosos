@@ -27,6 +27,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .grid-inicio {
     margin-top: 10vh;
     margin-left: 12.5vw;
