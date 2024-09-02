@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.home {
+    background-color: rgb(74, 26, 64);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navBar{
+    background-color: rgb(98, 37, 85);
+    color: white;
+    font-family:  "Jockey One", sans-serif;;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.redi
+{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
