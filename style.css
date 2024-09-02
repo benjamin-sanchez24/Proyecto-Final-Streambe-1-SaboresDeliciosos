@@ -9,7 +9,7 @@ body{
     justify-content: center;
 }
 
-
+ 
 .navBar{
     background-color: rgb(98, 37, 85);
     color: white;
@@ -52,4 +52,4 @@ body{
 .cosa3 {
     height: 37 vh; 
     background-color: red;
-    grid-area: 2 / 2 / 3 / 3; }
+    grid-area: 2 / 2 / 3 / 3;  }
