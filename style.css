@@ -33,6 +33,7 @@ body{
     height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .cosa{
     border: 5px solid black;
