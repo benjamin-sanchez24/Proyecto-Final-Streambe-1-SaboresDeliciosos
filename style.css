@@ -50,6 +50,6 @@ body{
     grid-area: 1 / 2 / 2 / 3; 
 }
 .cosa3 {
-    height: 37 vh; 
+    height: 37vh; 
     background-color: red;
     grid-area: 2 / 2 / 3 / 3;  }
