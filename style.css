@@ -27,3 +27,22 @@ body{
     display: flex;
     justify-content: center;
 }
+.grid-inicio{
+    background-color: blue;
+    width: 80vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cosa{
+    border: 5px solid black;
+    background-color: red;
+    height: 30vh;
+    width: 35vw;
+}
+.cosa1{
+    border: 5px solid black;
+    background-color: red;
+    height: 60vh;
+    width: 35vw;
+}
