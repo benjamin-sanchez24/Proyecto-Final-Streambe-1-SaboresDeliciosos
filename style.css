@@ -29,23 +29,28 @@ body{
 }
 
 .grid-inicio {
-    margin-top: 10vh;
-    margin-left: 12.5vw;
-    width: 80vw;
-    margin-bottom: 20vh;
-    display: grid;
-    grid-template-columns: 50% 40%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    }
-    
-.cosa1 {
-     grid-area: 1 / 1 / 3 / 2; 
-    }
-.cosa2 {   
 
-    grid-area: 1 / 2 / 2 / 3; 
+    padding-left: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 500px) repeat(3, 1fr);
+    grid-template-rows: repeat(2, 352px) repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
 }
-.cosa3 {
-    grid-area: 2 / 2 / 3 / 3;  }
+
+.grid-inicio {
+    overflow: auto; 
+}
+
+.cosa1 {grid-area: 1 / 1 / 3 / 2; }
+.cosa2 { grid-area: 1 / 2 / 2 / 3; }
+.cosa3 { grid-area: 2 / 2 / 3 / 3; }
+
+.container-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 850px;
+}
