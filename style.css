@@ -42,29 +42,139 @@ body{
     justify-content: center;
 }
 
-.grid-inicio {
-
-    padding-left: 5vw;
-    display: grid;
-    grid-template-columns: repeat(2, 500px) repeat(3, 1fr);
-    grid-template-rows: repeat(2, 352px) repeat(3, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 10px;
-}
-
-.grid-inicio {
-    overflow: auto; 
-}
-
-.cosa1 {grid-area: 1 / 1 / 3 / 2; }
-.cosa2 { grid-area: 1 / 2 / 2 / 3; }
-.cosa3 { grid-area: 2 / 2 / 3 / 3; }
-
 .container-grid{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    width: 100vw;
+    margin-top: 3vh;
     height: 850px;
 }
+.grid-inicio {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2, 352px);
+    grid-column-gap: 1vw;
+    grid-row-gap: .5vw;
+}
+
+
+
+.img1 {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    grid-area: 1 / 1 / 3 / 2; 
+}
+    
+.CUPCAKES{
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    font-size: auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 84.7%;
+    height: 15.3%;
+    font-size: 145%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CUPCAKESTEXTO{
+    padding: 14%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 100%;
+    text-align: center;
+    font-size: 200%;
+}
+.img2 { 
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    grid-area: 1 / 2 / 2 / 3; }
+.tortas{
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        font-size: auto;
+        color: white;
+        text-align: center;
+        width: 100%;
+        top: 69.4%;
+        height: 30.6%;
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.textoTortas{
+        padding: 6%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        height: 100%;
+        text-align: center;
+        font-size: 150%;
+    }
+.img3 { 
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    grid-area: 2 / 2 / 3 / 3; }
+    .postres{
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        font-size: auto;
+        color: white;
+        text-align: center;
+        width: 100%;
+        top: 69.4%;
+        height: 30.6%;
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.textoPostres{
+        padding: 7.5%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        height: 100%;
+        text-align: center;
+        font-size: 150%;
+    }
+
+
+.cinta{
+    background-color: rgb(166, 82, 150);
+    color: white;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}
+
+
+
+.cinta > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconito {
+    margin-bottom: 10px;
+}
+
