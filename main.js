@@ -7,7 +7,7 @@ contenedor1.addEventListener("mouseenter", ()=> {
     tituloImagen1.classList.remove("CUPCAKES");
     tituloImagen1.textContent= "¡Descubre la dulzura perfecta en cada bocado! Nuestros cupcakes, elaborados con ingredientes frescos y un toque de amor, te sorprenderán con su sabor único. Ven y prueba la felicidad en forma de cupcake. ¡Te esperamos!";
 })
-
+ 
 contenedor1.addEventListener("mouseleave", ()=> {
     tituloImagen1.classList.add("CUPCAKES");
     tituloImagen1.classList.remove("CUPCAKESTEXTO");
