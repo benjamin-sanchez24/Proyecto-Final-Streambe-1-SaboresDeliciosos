@@ -34,14 +34,57 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.redi
-{
-    font-size: 3vh;
-    width:4vw;
+.todosProductos{
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(98, 37, 85);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;;
+    height: 45vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+#boton:hover{
+    cursor: pointer;
+}
+.columna{
+    width: 10%;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+
+
+.lista {
+    list-style-type: none; 
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100vw;
+}
+
+
+.redi
+{
+    position: relative;
+    align-items: center;
+    font-size: 3vh;
+    width:7vw;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family:  "Jockey One", sans-serif;;
+}
 .container-grid{
     width: 100%;
     display: flex;
@@ -156,16 +199,15 @@ body{
 
 
 .cinta{
+    margin-top: 7vh;
     background-color: rgb(166, 82, 150);
     color: white;
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
 }
-
-
 
 .cinta > div {
     display: flex;
@@ -178,3 +220,49 @@ body{
     margin-bottom: 10px;
 }
 
+.pie {
+    display: flex;
+    padding: 5vh;
+    color: #4A1A40;
+}
+
+.pie h4, b {
+    font-family: jockey one;
+    color: #622555;
+}
+
+.p1 {
+    padding: 4vh;
+    text-align: center;
+}
+
+.p1 h4 {
+    padding-top: 1.5vh;
+}
+
+.p2 {
+    margin: 3.5vh;
+    align-content: center;
+}
+
+.p2 h4{
+    border-bottom: solid 1px;
+    padding-right: 18vh;
+}
+
+.p3 {
+    margin-left: 5vh;
+    margin-right: 2.5vh;
+    align-content: center;
+}
+
+.p4 {
+    align-content: center;
+    text-align: center;
+    padding: 12vh;
+}
+
+.p4 a {
+    color: #4A1A40;
+    text-decoration: none;
+}
