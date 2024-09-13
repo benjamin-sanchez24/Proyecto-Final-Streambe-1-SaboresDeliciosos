@@ -7,7 +7,7 @@ contenedor1.addEventListener("mouseenter", ()=> {
     tituloImagen1.classList.remove("CUPCAKES");
     tituloImagen1.textContent= "¡Descubre la dulzura perfecta en cada bocado! Nuestros cupcakes, elaborados con ingredientes frescos y un toque de amor, te sorprenderán con su sabor único. Ven y prueba la felicidad en forma de cupcake. ¡Te esperamos!";
 })
- 
+
 contenedor1.addEventListener("mouseleave", ()=> {
     tituloImagen1.classList.add("CUPCAKES");
     tituloImagen1.classList.remove("CUPCAKESTEXTO");
@@ -50,10 +50,6 @@ contenedor3.addEventListener("mouseleave", ()=> {
 })
 
 
-
-
-
-
 /////////////////////////////////
 
 
@@ -61,20 +57,44 @@ contenedor3.addEventListener("mouseleave", ()=> {
 let logo = document.querySelector(".home");
 let barra = document.querySelector(".navBar");
 let activar = convertirVhAPixeles(23);
-
+let productos = document.querySelector(".containerNavBar")
 window.addEventListener('scroll', function() {
     let scroll = window.scrollY;
     if (scroll>activar){
         logo.style.display= "none"
         barra.classList.add("navBarFix");
         barra.classList.remove("navBar");
+        todosProductos.style.top= "10%";
     }
     else{
         logo.style.display= "flex"
         barra.classList.add("navBar");
         barra.classList.remove("navBarFix");
+        todosProductos.style.top= "33%";
     }
 })
 function convertirVhAPixeles(vh) {
     return (window.innerHeight * vh) / 100;
 }
+
+
+
+///////////////////////////
+
+const boton = document.querySelector("#boton");
+const todosProductos = document.querySelector(".todosProductos");
+activo= false;
+
+boton.addEventListener("click", () => {
+    
+
+    if (activo==false) {
+        todosProductos.style.visibility="visible"
+        todosProductos.style.position="fixed";
+
+    } else {
+        todosProductos.style.visibility="hidden"
+
+    }
+    activo = !activo; 
+})
