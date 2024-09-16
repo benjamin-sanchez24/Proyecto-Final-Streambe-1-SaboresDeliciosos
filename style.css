@@ -1,5 +1,7 @@
 body{
-    margin: 0;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
 .home {
@@ -200,7 +202,7 @@ body{
 
 .cinta{
     margin-top: 7vh;
-    background-color: rgb(166, 82, 150);
+    background-color: #A65296;
     color: white;
     height: 30vh;
     display: flex;
@@ -221,8 +223,11 @@ body{
 }
 
 .pie {
+    width:100%;
+    bottom:0;
+    left:0;
     display: flex;
-    padding: 5vh;
+    justify-content: center;
     color: #4A1A40;
 }
 
@@ -232,34 +237,33 @@ body{
 }
 
 .p1 {
-    padding: 4vh;
+    padding: 2vh;
     text-align: center;
 }
 
 .p1 h4 {
-    padding-top: 1.5vh;
+    padding-top: 1vh;
 }
 
 .p2 {
-    margin: 3.5vh;
+    margin: 3vh;
     align-content: center;
 }
 
 .p2 h4{
     border-bottom: solid 1px;
-    padding-right: 18vh;
+    padding-right: 14vh;
 }
 
 .p3 {
-    margin-left: 5vh;
-    margin-right: 2.5vh;
+    margin-left: 4vh;
+    margin-right: 2vh;
     align-content: center;
 }
 
 .p4 {
     align-content: center;
     text-align: center;
-    padding: 12vh;
 }
 
 .p4 a {
