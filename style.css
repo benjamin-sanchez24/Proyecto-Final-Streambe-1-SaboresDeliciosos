@@ -224,10 +224,8 @@ body{
 
 .pie {
     width:100%;
-    bottom:0;
-    left:0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #4A1A40;
 }
 
@@ -236,37 +234,18 @@ body{
     color: #622555;
 }
 
-.p1 {
-    padding: 2vh;
-    text-align: center;
+.ft {
+
+    width: 12%;
+    align-content: center;
 }
 
-.p1 h4 {
+.ft h4{
     padding-top: 1vh;
-}
-
-.p2 {
-    margin: 3vh;
-    align-content: center;
-}
-
-.p2 h4{
     border-bottom: solid 1px;
-    padding-right: 14vh;
 }
 
-.p3 {
-    margin-left: 4vh;
-    margin-right: 2vh;
-    align-content: center;
-}
-
-.p4 {
-    align-content: center;
-    text-align: center;
-}
-
-.p4 a {
+.ft a {
     color: #4A1A40;
     text-decoration: none;
 }
