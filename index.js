@@ -58,6 +58,7 @@ let logo = document.querySelector(".home");
 let barra = document.querySelector(".navBar");
 let activar = convertirVhAPixeles(23);
 let productos = document.querySelector(".containerNavBar")
+let grid = document.querySelector(".container-grid");
 window.addEventListener('scroll', function() {
     let scroll = window.scrollY;
     if (scroll>activar){
@@ -65,12 +66,14 @@ window.addEventListener('scroll', function() {
         barra.classList.add("navBarFix");
         barra.classList.remove("navBar");
         todosProductos.style.top= "10%";
+        grid.style.marginTop=("35vh")
     }
     else{
         logo.style.display= "flex"
         barra.classList.add("navBar");
         barra.classList.remove("navBarFix");
         todosProductos.style.top= "33%";
+        grid.style.marginTop=("3vh")
     }
 })
 function convertirVhAPixeles(vh) {
