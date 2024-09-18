@@ -3,7 +3,8 @@ let logo = document.querySelector(".home");
 let barra = document.querySelector(".navBar");
 let activar = convertirVhAPixeles(23);
 let productos = document.querySelector(".containerNavBar");
-let containers = document.querySelector(".containerContacto")
+let containers = document.querySelector(".containerContacto") //cambiar
+
 window.addEventListener('scroll', function() {
     let scroll = window.scrollY;
     if (scroll>activar){

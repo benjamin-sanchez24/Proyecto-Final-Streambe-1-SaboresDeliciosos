@@ -1,0 +1,184 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.home {
+    background-color: rgb(74, 26, 64);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 23vh;
+    align-items: center;
+}
+
+ 
+.navBar{
+    background-color: rgb(98, 37, 85);
+    color: white;
+    font-family:  "Jockey One", sans-serif;;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navBarFix{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background-color: rgb(98, 37, 85);
+    color: white;
+    font-family:  "Jockey One", sans-serif;;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.todosProductos{
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(98, 37, 85);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+#boton:hover{
+    cursor: pointer;
+}
+.columna{
+    width: 10%;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.lista {
+    list-style-type: none; 
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100vw;
+}
+
+
+.redi
+{
+    position: relative;
+    align-items: center;
+    font-size: 3vh;
+    width:7vw;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family:  "Jockey One", sans-serif;;
+}
+
+.superior{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, sans-serif;
+    padding-top: 9vh;
+    padding-left: 7vh;
+    height: 12vh;
+    color: #4A1A3F;
+}
+.categorias{
+    width: 30%;
+    height: 650px;
+    background-color: rgb(255, 255, 249);
+    position: relative;
+
+}
+.categoriasFix{
+    width: 30%;
+    height: 650px;
+    background-color: rgb(255, 255, 249);
+    position: sticky;
+    z-index: 100;
+    top: 10%;
+}
+
+.busqueda{
+    width: 15vw;
+    border: none;
+    height: 4vh;
+    font-size: 25px;
+
+}
+.busqueda::placeholder {
+    color: rgba(74, 26, 63, 0.8);
+ 
+}
+.busqueda:focus{
+    outline: 0;
+}
+.enviar{
+    width: 4vw;
+    height: 6vh;
+    font-size: 20px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie {
+    width:100%;
+    display: flex;
+    height: 35vh;
+    justify-content: space-evenly;
+    color: #4A1A40;
+    align-items: center;
+}
+
+.pie h4, b {
+    font-family: jockey one;
+    color: #622555;
+}
+
+.ft {
+
+    width: 12%;
+    align-content: center;
+}
+
+.ft h4{
+    padding-top: 1vh;
+    border-bottom: solid 1px;
+}
+
+.ft a {
+    color: #4A1A40;
+    text-decoration: none;
+}
