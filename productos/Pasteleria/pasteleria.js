@@ -26,21 +26,3 @@ window.addEventListener('scroll', function() {
 function convertirVhAPixeles(vh) {
     return (window.innerHeight * vh) / 100;
 }
-
-const boton = document.querySelector("#boton");
-const todosProductos = document.querySelector(".todosProductos");
-activo= false;
-
-boton.addEventListener("click", () => {
-    
-
-    if (activo==false) {
-        todosProductos.style.visibility="visible"
-        todosProductos.style.position="fixed";
-
-    } else {
-        todosProductos.style.visibility="hidden"
-
-    }
-    activo = !activo; 
-})
