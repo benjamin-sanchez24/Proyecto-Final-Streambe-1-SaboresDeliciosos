@@ -37,29 +37,9 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.todosProductos{
-    z-index: 100000;
-    visibility: hidden;
-    position: absolute;
-    background-color: rgb(98, 37, 85);
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;;
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-} 
+
 #boton:hover{
     cursor: pointer;
-}
-.columna{
-    width: 10%;
-    height: 40vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 
@@ -92,13 +72,11 @@ body{
 .superior{
     font-size: 35px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, sans-serif;
-    margin-bottom: 7vh;
-    margin-right: 2vw;
     height: 12vh;
     color: #4A1A3F;
 }
 .categorias{
-    width: 350px;
+    width: 400px;
     height: 80vh;
     background-color: rgb(255, 255, 249);
     position: relative;
@@ -109,8 +87,8 @@ body{
     padding-top: 3vh;
 }
 .categoriasFix{
-    width: 350px;
-    height: 90vh;
+    width: 400px;
+    height: 80vh;
     background-color: rgb(255, 255, 249);
     position: sticky;
     z-index: 100;
@@ -199,7 +177,7 @@ body{
 
 .ft {
 
-    width: 12%;
+    width: 14%;
     align-content: center;
 }
 
@@ -211,4 +189,61 @@ body{
 .ft a {
     color: #4A1A40;
     text-decoration: none;
+}
+.tipoDeProducto{
+    color: black;
+    width: 170px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    }
+
+.tipoDeProducto:hover{
+    color: white;
+    text-decoration: none;
+    zoom: 105%;
+    background-color: #861e73;
+    border-radius:  5px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.ejemplarInfo{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+.ejemplar
+
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    display: flex;
+    margin-top: 5vh;
+    width: 60vw;
+    margin-left: 35vw; 
+    position: absolute;
+}
+.ejemplar h4{
+    padding: 3.2%;
+    font-size: 25px;
+}
+.ejemplar h3{
+    padding-left: 3.2%;
+    color: #8a1d70;
+}
+.ejemplar button{
+    width: 15vw; 
+    margin: 2.8vh;
+    background-color: #8a1d70;
+    color: white;
+    border-radius: 3px;
+    border: 0;
+}
+.ejemplar img{
+    padding-top: 5%;
 }

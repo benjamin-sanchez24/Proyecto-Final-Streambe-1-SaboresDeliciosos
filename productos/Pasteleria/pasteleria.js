@@ -1,4 +1,3 @@
-
 let logo = document.querySelector(".home");
 let barra = document.querySelector(".navBar");
 let activar = convertirVhAPixeles(23);
@@ -21,7 +20,7 @@ window.addEventListener('scroll', function() {
         barra.classList.remove("navBarFix");
         cintaIzquierda.classList.remove("categoriasFix");
         cintaIzquierda.classList.add("categorias");
-        todosProductos.style.top="33%";
+        todosProductos.style.top="23%";
     }
 })
 function convertirVhAPixeles(vh) {

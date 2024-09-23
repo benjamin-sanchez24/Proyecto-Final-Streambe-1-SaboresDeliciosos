@@ -65,39 +65,15 @@ window.addEventListener('scroll', function() {
         logo.style.display= "none"
         barra.classList.add("navBarFix");
         barra.classList.remove("navBar");
-        todosProductos.style.top= "10%";
         grid.style.marginTop=("35vh")
     }
     else{
         logo.style.display= "flex"
         barra.classList.add("navBar");
         barra.classList.remove("navBarFix");
-        todosProductos.style.top= "33%";
-        grid.style.marginTop=("3vh")
+        grid.style.marginTop=("3vh");
     }
 })
 function convertirVhAPixeles(vh) {
     return (window.innerHeight * vh) / 100;
 }
-
-
-
-///////////////////////////
-
-const boton = document.querySelector("#boton");
-const todosProductos = document.querySelector(".todosProductos");
-activo= false;
-
-boton.addEventListener("click", () => {
-    
-
-    if (activo==false) {
-        todosProductos.style.visibility="visible"
-        todosProductos.style.position="fixed";
-
-    } else {
-        todosProductos.style.visibility="hidden"
-
-    }
-    activo = !activo; 
-})
