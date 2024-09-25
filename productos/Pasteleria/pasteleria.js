@@ -12,7 +12,6 @@ window.addEventListener('scroll', function() {
         cintaIzquierda.classList.remove("categorias");
         cintaIzquierda.classList.add("categoriasFix");
         cintaIzquierda.style.top="10%"
-        todosProductos.style.top="10%";
     }
     else{
         logo.style.display= "flex"
@@ -20,7 +19,6 @@ window.addEventListener('scroll', function() {
         barra.classList.remove("navBarFix");
         cintaIzquierda.classList.remove("categoriasFix");
         cintaIzquierda.classList.add("categorias");
-        todosProductos.style.top="23%";
     }
 })
 function convertirVhAPixeles(vh) {
