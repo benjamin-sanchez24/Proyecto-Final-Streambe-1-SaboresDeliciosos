@@ -76,8 +76,8 @@ body{
     color: #4A1A3F;
 }
 .categorias{
-    width: 400px;
-    height: 80vh;
+    width: 25vw;
+    height: 100vb;
     background-color: rgb(255, 255, 249);
     position: relative;
     display: flex;
@@ -87,8 +87,8 @@ body{
     padding-top: 3vh;
 }
 .categoriasFix{
-    width: 400px;
-    height: 80vh;
+    width: 25vw;
+    height: 100vb;
     background-color: rgb(255, 255, 249);
     position: sticky;
     z-index: 100;
@@ -135,6 +135,8 @@ body{
     
 }
 .sugerencia{
+
+    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -149,15 +151,6 @@ body{
     border-bottom: 2px solid #4A1A40; padding-bottom: 0.5vh; margin: 3%;
     width: 12vw; 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -216,17 +209,29 @@ body{
     flex-direction: column;
     width: 60vw;
 }
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.ejemplares{
+    margin-right: 5vw;
+    margin-top: 5vh;
+    width: 60vw;
+    margin-bottom: 20vh;
+}
 .ejemplar
 
 {
+    margin-top: 5vh;
+    height: 35vh;
+    width: 60vw;
     background-color: white;
     border-radius: 20px;
     padding: 1%;
     display: flex;
-    margin-top: 5vh;
-    width: 60vw;
-    margin-left: 35vw; 
-    position: absolute;
+
+
 }
 .ejemplar h4{
     padding: 3.2%;
