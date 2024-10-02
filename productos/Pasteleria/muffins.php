@@ -110,8 +110,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
         $id = $columns['id'];
         $imagen = $columns['imagen'];
         ?>
-        <img src="/images/imgs/"<?php echo $imagen;? ".jpg">
-
+        <img src="/images/imgs/"<?php echo $imagen; ?>>
         </div>
     <div class="ejemplarInfo">
     <h4><?php echo $columns['nombre']; ?></h4>
