@@ -1,3 +1,15 @@
+<?php 
+
+require 'C:\xampp\htdocs\Proyecto final streambe\Proyecto-Final-Streambe-1\config\database.php';
+$db = new Database();
+$con = $db->conectar();
+
+$sql = $con->prepare("SELECT id, nombre, precio, descripcion, imagen FROM prodpasteleria WHERE activo=1");
+$sql->execute();
+$resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,15 +101,21 @@
 </div>
 </div>
 
-    <div class="ejemplares">
 
+    <div class="ejemplares">
 <div class="ejemplar">
+<?php foreach($resultado as $columns) { ?>
         <div class="ejemplarImagen">
-            <img src="images/placa.jpg" width="200px">
+        <?php 
+        $id = $columns['id'];
+        $imagen = $columns['imagen'];
+        ?>
+        <img src="/images/imgs/"<?php echo $imagen;? ".jpg">
+
         </div>
     <div class="ejemplarInfo">
-            <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-            <h3>$ 627.890</h3>
+    <h4><?php echo $columns['nombre']; ?></h4>
+    <h3>$<?php echo $columns['precio']; ?></h3>
            
 
 
@@ -127,500 +145,17 @@
 
 
                 
-    </div>
+</div>
         
 
-
-</div>
-<div class="ejemplar">
-        <div class="ejemplarImagen">
-            <img src="images/placa.jpg" width="200px">
-        </div>
-<div class="ejemplarInfo">
-            <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-            <h3>$ 627.890</h3>
-           
-
-
-
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Ver información
-              </button>
-              
-
-              
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="" width="100%" class="ponerImagen">
-                                        </div>
-                                        <div class="modal-footer">
-                                        
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-
-
-
-                
+    <?php } ?>
 </div>
 
 
 
 
 
-
 </div>
-<div class="ejemplar">
-        <div class="ejemplarImagen">
-            <img src="images/placa.jpg" width="200px">
-        </div>
-<div class="ejemplarInfo">
-            <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-            <h3>$ 627.890</h3>
-           
-
-
-
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Ver información
-              </button>
-              
-
-              
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="" width="100%" class="ponerImagen">
-                                        </div>
-                                        <div class="modal-footer">
-                                        
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-
-
-
-                
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-<div class="ejemplar">
-    <div class="ejemplarImagen">
-        <img src="images/placa.jpg" width="200px">
-    </div>
-<div class="ejemplarInfo">
-        <h4>Placa de Video Zotac GeForce RTX 4060 Ti 16GB GDDR6 AMP</h4>
-        <h3>$ 627.890</h3>
-       
-
-
-
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver información
-          </button>
-          
-
-          
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="" width="100%" class="ponerImagen">
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-
-
-
-            
-</div>
-
-
-
-
-
-
-</div>
-</div>
-
-  
-
-
 </div>  
        
 <footer style="background-color: #FEFEFF;" class="pie">    

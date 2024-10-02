@@ -26,4 +26,6 @@ class Database {
             exit;
         }
     }
-}
+} 
+
+?>
