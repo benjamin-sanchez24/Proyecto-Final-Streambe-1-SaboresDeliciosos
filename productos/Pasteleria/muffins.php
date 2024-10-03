@@ -4,7 +4,7 @@ require 'C:\xampp\htdocs\final\config\database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id, nombre, descripcion, imagen FROM prodpasteleria WHERE activo=1");
+$sql = $con->prepare("SELECT id, nombre, sabor, tamaño, cantidad, imagen FROM prodpasteleria WHERE activo=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -118,7 +118,9 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             </div>
                             <div class="modal-body">
                                 <img src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" width="100%" class="ponerImagen" alt="<?php echo htmlspecialchars($columns['nombre']); ?>">
-                                <p><?php echo htmlspecialchars($columns['descripcion']); ?></p> <!-- Muestra la descripción si la tienes -->
+                                <?php echo "Sabor: " . $columns['sabor'] . "<br>";
+                                  echo "Tamaño: " . $columns['tamaño'] . "<br>";
+                                 echo "Cantidad: " . $columns['cantidad'];?> 
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
