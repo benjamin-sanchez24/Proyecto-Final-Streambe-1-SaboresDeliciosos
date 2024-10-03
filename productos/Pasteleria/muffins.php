@@ -4,7 +4,7 @@ require 'C:\xampp\htdocs\final\config\database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id, nombre, precio, descripcion, imagen FROM prodpasteleria WHERE activo=1");
+$sql = $con->prepare("SELECT id, nombre, descripcion, imagen FROM prodpasteleria WHERE activo=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -105,7 +105,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="ejemplarInfo">
                 <h4><?php echo htmlspecialchars($columns['nombre']); ?></h4>
-                <h3>$<?php echo htmlspecialchars($columns['precio']); ?></h3>
 
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $id; ?>">
                     Ver información
@@ -128,7 +127,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
             </div>
-        
+
     </div>
     <?php } ?>
 </div>
