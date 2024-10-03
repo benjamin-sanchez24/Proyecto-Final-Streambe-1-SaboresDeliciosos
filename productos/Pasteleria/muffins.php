@@ -42,12 +42,12 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                         <div class="offcanvas-body">
                             <h3>Pasteleria</h3>
-                            <a href="muffins.html" class="link"><h5 class="tipoDeProducto">Muffins</h5></a>
-                            <h5 class="tipoDeProducto">Budines</h5>
-                            <h5 class="tipoDeProducto">Alfajores</h5>
-                            <h5 class="tipoDeProducto">Tortas</h5>
-                            <h5 class="tipoDeProducto">Tartas</h5>
-                            <h5 class="tipoDeProducto">Brownies</h5>
+                            <a href="muffins.php" class="link"><h5 class="tipoDeProducto">Muffins</h5></a>
+                            <a href="budines.php" class="link"><h5 class="tipoDeProducto">Budines</h5></a>
+                            <a href="alfajores.php" class="link"><h5 class="tipoDeProducto">Alfajores</h5></a>
+                            <a href="tortas.php" class="link"><h5 class="tipoDeProducto">Tortas</h5></a>
+                            <a href="tartas.php" class="link"><h5 class="tipoDeProducto">Tartas</h5></a>
+                            <a href="brownies.php" class="link"><h5 class="tipoDeProducto">Brownies</h5></a>
 
                             <h3>Panaderia</h3>
                             <h5 class="tipoDeProducto">Panes</h5>
@@ -101,7 +101,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
         ?>
     <div class="ejemplar">
             <div class="ejemplarImagen">
-                <img style="width: 150px; height: 190px; margin-top: 10px" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
+                <img style="width: 150px; height: 190px; margin-top: 10px; border-radius: 7%" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
             </div>
             <div class="ejemplarInfo">
                 <h4><?php echo htmlspecialchars($columns['nombre']); ?></h4>
@@ -110,17 +110,19 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                     Ver información
                 </button>
 
-                <div class="modal fade" id="exampleModal<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?php echo $id; ?>" aria-hidden="true">
+                <div class="modal fade" id="exampleModal<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?php echo $id; ?>" aria-hidden="true" style="z-index: 100000;">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel<?php echo $id; ?>"><?php echo htmlspecialchars($columns['nombre']); ?></h1>
                             </div>
-                            <div class="modal-body">
-                                <img src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" width="100%" class="ponerImagen" alt="<?php echo htmlspecialchars($columns['nombre']); ?>">
-                                <?php echo "Sabor: " . $columns['sabor'] . "<br>";
-                                  echo "Tamaño: " . $columns['tamaño'] . "<br>";
-                                 echo "Cantidad: " . $columns['cantidad'];?> 
+                            <div class="modal-body" style="display: flex; align-items: center;">
+                                <img src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" width="40%" class="ponerImagen" alt="<?php echo htmlspecialchars($columns['nombre']); ?>">
+                                <ul>
+                                <?php echo "<li>Sabor: " . $columns['sabor'] . "</li>";
+                                  echo "<li>Tamaño: " . $columns['tamaño'] . "</li>";
+                                 echo "<li>Cantidad: " . $columns['cantidad']. "</li>";?> 
+                                </ul>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

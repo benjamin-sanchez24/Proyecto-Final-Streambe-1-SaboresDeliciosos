@@ -204,11 +204,7 @@ body{
     text-decoration: none;
     color: white;
 }
-.ejemplarInfo{
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-}
+
 
 .contenedor{
     display: flex;
@@ -230,25 +226,30 @@ body{
     border-radius: 20px;
     padding: 1%;
     display: flex;
-
-
+}
+.ejemplarInfo{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 3%;
+    justify-content: space-between;
+    
 }
 .ejemplar h4{
-    padding: 3.2%;
+    padding: .2%;
     font-size: 25px;
 }
-.ejemplar h3{
-    padding-left: 3.2%;
-    color: #8a1d70;
-}
+
 .ejemplar button{
     width: 15vw; 
-    margin: 2.8vh;
     background-color: #8a1d70;
     color: white;
     border-radius: 3px;
     border: 0;
 }
 .ejemplar img{
-    padding-top: 5%;
+    margin: 5%;
+}
+.ponerImagen{
+    border-radius: 7%;
 }
