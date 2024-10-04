@@ -45,10 +45,9 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <a href="muffins.php" class="link"><h5 class="tipoDeProducto">Muffins</h5></a>
                             <a href="budines.php" class="link"><h5 class="tipoDeProducto">Budines</h5></a>
                             <a href="alfajores.php" class="link"><h5 class="tipoDeProducto">Alfajores</h5></a>
-                            <h5 class="tipoDeProducto">Tortas</h5>
-                            <h5 class="tipoDeProducto">Tartas</h5>
-                            <h5 class="tipoDeProducto">Brownies</h5>
-
+                            <a href="tortas.php" class="link"><h5 class="tipoDeProducto">Tortas</h5></a>
+                            <a href="tartas.php" class="link"><h5 class="tipoDeProducto">Tartas</h5></a>
+                            <a href="brownies.php" class="link"><h5 class="tipoDeProducto">Brownies</h5></a>
                             <h3>Panaderia</h3>
                             <h5 class="tipoDeProducto">Panes</h5>
                             <h5 class="tipoDeProducto">Pre pizzas</h5>
