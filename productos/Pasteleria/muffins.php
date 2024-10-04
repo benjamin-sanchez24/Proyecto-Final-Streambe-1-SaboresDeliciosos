@@ -1,6 +1,6 @@
 <?php 
 
-require __DIR__ . '/../../config/database.php';
+require __DIR__ . '/../../config/database.php'; //El código incluye el archivo database.php desde el script PHP actual, pero usando una ruta relativa basada en la ubicación del archivo que lo llama
 $db = new Database();
 $con = $db->conectar();
 
