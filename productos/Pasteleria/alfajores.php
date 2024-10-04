@@ -4,7 +4,7 @@ require 'C:\xampp\htdocs\final\config\database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id, nombre, sabor, tamaño, cantidad, imagen FROM prodpasteleria WHERE activo=1");
+$sql = $con->prepare("SELECT id, nombre, sabor, tamaño, cantidad, imagen FROM prodpasteleria WHERE activo=3");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
