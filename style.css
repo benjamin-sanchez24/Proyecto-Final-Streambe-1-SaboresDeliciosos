@@ -94,6 +94,7 @@ body{
 }
     
 .CUPCAKES{
+    font-family: jockey one;
     background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     font-size: auto;
@@ -124,6 +125,7 @@ body{
     height: auto;
     grid-area: 1 / 2 / 2 / 3; }
 .tortas{
+    font-family: jockey one;
         background-color: rgba(0, 0, 0, 0.85);
         position: absolute;
         font-size: auto;
@@ -154,6 +156,7 @@ body{
     height: auto;
     grid-area: 2 / 2 / 3 / 3; }
     .postres{
+        font-family: jockey one;
         background-color: rgba(0, 0, 0, 0.85);
         position: absolute;
         font-size: auto;

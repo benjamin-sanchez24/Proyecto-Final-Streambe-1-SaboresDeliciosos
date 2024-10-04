@@ -10,22 +10,21 @@ class Database {
 
     function conectar() 
     {
-        try{
-        $conexion = "mysql:host=" . $this->hostname . "; dbname=" . $this->database . "; charset=" . $this->charset;
-        
-        $options = [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_EMULATE_PREPARES => false
-        ];
+        try {
+            $conexion = "mysql:host=" . $this->hostname . "; dbname=" . $this->database . "; charset=" . $this->charset;
 
-        $pdo = new PDO($conexion, $this->username, $this->password, $options);
+            $options = [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_EMULATE_PREPARES => false
+            ];
 
-        return $pdo; 
+            $pdo = new PDO($conexion, $this->username, $this->password, $options);
+
+            return $pdo; 
         } catch(PDOException $e) {
-            echo 'Error conexion: ' . $e->getMessage();
+            echo 'Error de conexión: ' . $e->getMessage();
             exit;
         }
     }
-} 
-
+}
 ?>
