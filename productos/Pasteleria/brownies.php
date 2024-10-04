@@ -1,6 +1,6 @@
 <?php 
 
-require 'C:\xampp\htdocs\final\config\database.php';
+require __DIR__ . '/../../config/database.php';
 $db = new Database();
 $con = $db->conectar();
 
