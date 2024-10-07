@@ -42,12 +42,12 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                         <div class="offcanvas-body">
                             <h3>Pasteleria</h3>
-                            <a href="muffins.php" class="link"><h5 class="tipoDeProducto">Muffins</h5></a>
-                            <a href="budines.php" class="link"><h5 class="tipoDeProducto">Budines</h5></a>
-                            <a href="alfajores.php" class="link"><h5 class="tipoDeProducto">Alfajores</h5></a>
-                            <a href="tortas.php" class="link"><h5 class="tipoDeProducto">Tortas</h5></a>
-                            <a href="tartas.php" class="link"><h5 class="tipoDeProducto">Tartas</h5></a>
-                            <a href="brownies.php" class="link"><h5 class="tipoDeProducto">Brownies</h5></a>
+                            <a href="/productos/Pasteleria/muffins.php" class="link"><h5 class="tipoDeProducto">Muffins</h5></a>
+                            <a href="/productos/Pasteleria/budines.php" class="link"><h5 class="tipoDeProducto">Budines</h5></a>
+                            <a href="/productos/Pasteleria/alfajores.php" class="link"><h5 class="tipoDeProducto">Alfajores</h5></a>
+                            <a href="/productos/Pasteleria/tortas.php" class="link"><h5 class="tipoDeProducto">Tortas</h5></a>
+                            <a href="/productos/Pasteleria/tartas.php" class="link"><h5 class="tipoDeProducto">Tartas</h5></a>
+                            <a href="/productos/Pasteleria/brownies.php" class="link"><h5 class="tipoDeProducto">Brownies</h5></a>
 
                             <h3>Panaderia</h3>
                             <a href="panes.php" class="link"><h5 class="tipoDeProducto">Panes</h5></a>
@@ -55,7 +55,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <a href="boxes-saladas.php" class="link"><h5 class="tipoDeProducto">Boxes Salados</h5></a>
                             <a href="roscas.php" class="link"><h5 class="tipoDeProducto">Roscas o trenzas</h5></a>
                             <a href="galletitas.php" class="link"><h5 class="tipoDeProducto">Galletitas</h5></a>
-                            <a href="crmenonas.php" class="link"><h5 class="tipoDeProducto">Cremonas</h5></a>
+                            <a href="cremonas.php" class="link"><h5 class="tipoDeProducto">Cremonas</h5></a>
                         </ul>
             <li><a href="/contacto.html" class="redi">Contactanos</a></li>
             </li>
@@ -162,6 +162,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="pasteleria.js"></script>
+<script src="panaderia.js"></script>
 </body>
 </html>

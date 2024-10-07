@@ -50,12 +50,12 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <a href="brownies.php" class="link"><h5 class="tipoDeProducto">Brownies</h5></a>
 
                             <h3>Panaderia</h3>
-                            <a href="panes.php" class="link"><h5 class="tipoDeProducto">Panes</h5></a>
-                            <a href="prepizzas.php" class="link"><h5 class="tipoDeProducto">Pre Pizzas</h5></a>
-                            <a href="boxes-saladas.php" class="link"><h5 class="tipoDeProducto">Boxes Salados</h5></a>
-                            <a href="roscas.php" class="link"><h5 class="tipoDeProducto">Roscas o trenzas</h5></a>
-                            <a href="galletitas.php" class="link"><h5 class="tipoDeProducto">Galletitas</h5></a>
-                            <a href="crmenonas.php" class="link"><h5 class="tipoDeProducto">Cremonas</h5></a>
+                            <a href="/productos/Panaderia/panes.php" class="link"><h5 class="tipoDeProducto">Panes</h5></a>
+                            <a href="/productos/Panaderia/prepizzas.php" class="link"><h5 class="tipoDeProducto">Pre Pizzas</h5></a>
+                            <a href="/productos/Panaderia/boxes-saladas.php" class="link"><h5 class="tipoDeProducto">Boxes Salados</h5></a>
+                            <a href="/productos/Panaderia/roscas.php" class="link"><h5 class="tipoDeProducto">Roscas o trenzas</h5></a>
+                            <a href="/productos/Panaderia/galletitas.php" class="link"><h5 class="tipoDeProducto">Galletitas</h5></a>
+                            <a href="/productos/Panaderia/cremonas.php" class="link"><h5 class="tipoDeProducto">Cremonas</h5></a>
                         </ul>
             <li><a href="/contacto.html" class="redi">Contactanos</a></li>
             </li>
