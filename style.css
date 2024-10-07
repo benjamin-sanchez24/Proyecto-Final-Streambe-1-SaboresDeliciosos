@@ -208,34 +208,42 @@ body{
 .pie {
     width:100%;
     display: flex;
-    height: 35vh;
+    flex-wrap: wrap;
+    height: auto;
     justify-content: space-evenly;
     color: #4A1A40;
     align-items: center;
+    background-color: #FEFEFF;
+    font-size: auto;
 }
+
 
 .pie h4, b {
     font-family: jockey one;
     color: #622555; 
 }
-
 .ft {
-
-    width: 14%;
-    align-content: center;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
 }
 
 .ft h4{
     padding-top: 1vh;
-    border-bottom: solid 1px;   
+    border-bottom:  1px solid;   
 }
+
 
 .ft a {
     color: #4A1A40;
     text-decoration: none;
 }
+.ft img {
+    max-width: 100%;
+    height: auto;
+}
 .containerContacto{
-    height: 60vh;
+    height: 60vh auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -357,4 +365,71 @@ body{
 .link{
     text-decoration: none;
     color: black;
+}
+@media(max-width: 850px)  
+    /*responsive de index*/
+{
+    .home {
+        height: auto; 
+        width: 100vw;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-grid{
+        width: auto;
+        height: auto;
+        margin: 5%;
+      
+    }
+    .grid-inicio {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cinta{
+        margin-top: 7%;
+        margin-bottom: 10%;
+        background-color: #A65296;
+        color: white;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .ft {
+        width: 25%;
+    }
+
+}
+
+
+@media (min-width: 100px) and (max-width: 750px)  
+    /*responsive de contacto*/
+{
+    .home {
+        height: auto; 
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .containerContacto{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .ft {
+        width: 25%;
+    }
+    .infos{
+        width: 80vw;
+    }
+    .mapa{
+        
+        max-width: 100%;
+        height: auto;
+    }
+    
 }

@@ -220,7 +220,7 @@ body{
 
 {
     margin-top: 5vh;
-    height: 35vh;
+    height: auto;
     width: 60vw;
     background-color: white;
     border-radius: 20px;
@@ -252,4 +252,35 @@ body{
 }
 .ponerImagen{
     border-radius: 7%;
+}
+@media (min-width: 100px) and (max-width: 750px)
+{
+    .categorias{
+        display: none;
+    }
+    .categoriasFix{
+        display: none;
+    }
+
+    .ejemplares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .ejemplar{
+        height: auto;
+    }
+    .ft {
+        width: 25%;
+    }
+    .ejemplar button{
+        width: auto; 
+        height: auto;
+    }
+    .ejemplar h4{
+        padding-top: 5%;
+    }
 }

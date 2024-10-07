@@ -52,7 +52,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <h3>Panaderia</h3>
                             <a href="panes.php" class="link"><h5 class="tipoDeProducto">Panes</h5></a>
                             <a href="prepizzas.php" class="link"><h5 class="tipoDeProducto">Pre Pizzas</h5></a>
-                            <a href="boxes-saladas.php" class="link"><h5 class="tipoDeProducto">Boxes Salados</h5></a>
                             <a href="roscas.php" class="link"><h5 class="tipoDeProducto">Roscas o trenzas</h5></a>
                             <a href="galletitas.php" class="link"><h5 class="tipoDeProducto">Galletitas</h5></a>
                             <a href="cremonas.php" class="link"><h5 class="tipoDeProducto">Cremonas</h5></a>
@@ -66,10 +65,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
     <div class="categorias">
 
         <div class="superior"><strong>Productos</strong>
-        <form>
-            <input class="busqueda" type="search" placeholder="Buscar"/>
-            <button type="submit" class="enviar">🔎</button>
-        </form>
+       
 </div>
 
 <div class="contenedorProductos">
