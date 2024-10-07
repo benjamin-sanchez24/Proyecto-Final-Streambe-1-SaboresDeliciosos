@@ -54,7 +54,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <h5 class="tipoDeProducto">Pre pizzas</h5>
                             <h5 class="tipoDeProducto">Boxes salados</h5>
                             <h5 class="tipoDeProducto">Roscas o trenzas</h5>
-                            <h5 class="tipoDeProducto">Galletas o alfajores</h5>
+                            <h5 class="tipoDeProducto">Galletitas</h5>
                             <h5 class="tipoDeProducto">Cremonas</h5>
                         </ul>
             <li><a href="/contacto.html" class="redi">Contactanos</a></li>
