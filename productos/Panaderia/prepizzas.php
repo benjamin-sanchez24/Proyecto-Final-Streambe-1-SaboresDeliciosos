@@ -4,7 +4,7 @@ require __DIR__ . '/../../config/database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id, nombre, sabor, tamaño, cantidad, imagen FROM prodpanaderia WHERE activo=4");
+$sql = $con->prepare("SELECT id, nombre, sabor, tamaño, cantidad, imagen FROM prodpanaderia WHERE activo=2");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
