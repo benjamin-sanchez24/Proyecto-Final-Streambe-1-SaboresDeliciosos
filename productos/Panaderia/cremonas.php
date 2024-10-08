@@ -72,17 +72,17 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
     <div class="listaSugerencias">
         <h5 style="color: #4A1A3F;">PRODUCTOS DESTACADOS</h5>
         <div class="sugerencia">
-            <img src="images/Chocotorta.jpg" width="90" height="50" style="border-radius: 5px;">
+            <img src="/productos/Pasteleria/images/tortas/torta4.jpeg" width="90" height="50" style="border-radius: 5px;">
             <p class="nombreProducto">Chocotorta</p>
         </div>
         
         <div class="sugerencia">
-            <img src="images/lemon-pie.jpeg" width="90" height="50" style="border-radius: 5px;">
+            <img src="/productos/Pasteleria/images/tartas/tarta.jpeg" width="90" height="50" style="border-radius: 5px;">
             <p class="nombreProducto">Lemon Pie</p>
         </div>
         <div class="sugerencia">
-            <img src="images/budines.jpg" width="90" height="50" style="border-radius: 5px;">
-            <p class="nombreProducto">Budines</p>
+            <img src="/productos/Pasteleria/images/budines/budin6.jfif" width="90" height="50" style="border-radius: 5px;">
+            <p class="nombreProducto">Budin de chocolate</p>
         </div>
     </div>
 </div>
@@ -158,6 +158,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="pasteleria.js"></script>
+<script src="panaderia.js"></script>
 </body>
 </html>
