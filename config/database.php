@@ -2,10 +2,10 @@
 
 class Database {
 
-    private $hostname = "localhost";
-    private $database = "bdsaboresdeliciosos";
-    private $username = "root";
-    private $password = "";
+    private $hostname = "sql303.infinityfree.com";
+    private $database = 'if0_37479849_bdsaboresdeliciosos';
+    private $username = "if0_37479849";
+    private $password = "bdsaboresdel ";
     private $charset = "utf8";
 
     function conectar() 
