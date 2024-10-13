@@ -9,7 +9,6 @@ $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +64,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
     <div class="categorias">
 
         <div class="superior"><strong>Productos</strong>
-        
+
 </div>
 
 <div class="contenedorProductos">
@@ -97,7 +96,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
         ?>
     <div class="ejemplar">
             <div class="ejemplarImagen">
-                <img style="width: 150px; height: 190px; margin-top: 10px; border-radius: 7%" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
+                <img style="width: 135px; height: 171px; margin-top: 10px; border-radius: 7%" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
             </div>
             <div class="ejemplarInfo">
                 <h4><?php echo htmlspecialchars($columns['nombre']); ?></h4>
@@ -137,7 +136,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 </div>  
        
 <footer style="background-color: #FEFEFF;" class="pie">    
-    <div class="ft">
+    <div class="ft" id="primerFT">
         <img src="images/logofooter.png" width="300px" style="margin: 3%;">
         <h4>Panadería y Pastelería</h4>
         <p>Desayunos, eventos, tortas clasicas y decoradas</p>
