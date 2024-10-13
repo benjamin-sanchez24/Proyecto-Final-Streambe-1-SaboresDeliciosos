@@ -97,7 +97,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
         ?>
     <div class="ejemplar">
             <div class="ejemplarImagen">
-                <img style="width: 150px; height: 190px; margin-top: 10px; border-radius: 7%" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
+                <img style="width: 135px; height: 171px; margin-top: 10px; border-radius: 7%" src="data:<?php echo $tipoImagen; ?>;base64,<?php echo $imagenBase64; ?>" alt="<?php echo htmlspecialchars($columns['nombre']); ?>" />
             </div>
             <div class="ejemplarInfo">
                 <h4><?php echo htmlspecialchars($columns['nombre']); ?></h4>
@@ -135,28 +135,28 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 
 </div>  
-       
+             
 <footer style="background-color: #FEFEFF;" class="pie">    
-    <div class="ft">
+        <div class="ft" id="primerFT">
         <img src="images/logofooter.png" width="300px" style="margin: 3%;">
         <h4>Panadería y Pastelería</h4>
         <p>Desayunos, eventos, tortas clasicas y decoradas</p>
-    </div>
-    <div class="ft">
-        <a href="https://maps.app.goo.gl/rmQu3AjEBf19bj5Z8" target="_blank"><h4>Tienda</h4></a>
-        <a href="https://linktr.ee/saboresdeliciososs" target="_blank"><h4>Contacto</h4></a>
-    </div>
-    <div class="ft">
-        <h6>C. Chile 2195 <br> Benavidez, Buenos Aires.</h6>
-        <h6>Lunes a Sabados de 9:30 a 19:00</h6>
-        <b>Mensajes o WhatsApps al +54 9 11 2348-8392</b>
-    </div>
-    <div class="ft">
-        <b>Seguime en Instagram:</b><br>
-        <a href="https://www.instagram.com/saboresdeliciososs/" target="_blank"><img src="images/logoig.png" width="25wh">
-        <b>@saboresdeliciososs</b></a>
-    </div>
-</footer>
+        </div>
+        <div class="ft">
+            <a href="https://maps.app.goo.gl/rmQu3AjEBf19bj5Z8" target="_blank"><h4>Tienda</h4></a>
+            <a href="https://linktr.ee/saboresdeliciososs" target="_blank"><h4>Contacto</h4></a>
+        </div>
+        <div class="ft">
+            <p>C. Chile 2195 <br> Benavidez, Buenos Aires.</p>
+            <p>Lunes a Sabados de 9:30 a 19:00</h6>
+            <p>Mensajes o WhatsApps al<br> +54 9 11 2348-8392</p>
+        </div>
+        <div class="ft">
+            <b>Seguime en Instagram:</b><br>
+            <a href="https://www.instagram.com/saboresdeliciososs/" target="_blank"><img src="images/logoig.png" width="25wh">
+            <b>@saboresdeliciososs</b></a>
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="panaderia.js"></script>
 </body>
