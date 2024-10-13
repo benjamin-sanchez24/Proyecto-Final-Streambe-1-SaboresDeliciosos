@@ -2,11 +2,13 @@
 
 class Database {
 
-    private $hostname = "sql303.infinityfree.com";
+    private $hostname = "sql303.infinityfree.com"; 
     private $database = 'if0_37479849_bdsaboresdeliciosos';
-    private $username = "if0_37479849";
+    private $username = "if0_37479849";              
     private $password = "bdsaboresdel ";
     private $charset = "utf8";
+    /*si quieren probarlo de forma local descarguen la db de esta carpeta y subanla a su phpmyadmin de xampp, y cambien
+      las credenciales del host, db, user y password en este orden: localhost, bdsaboresdeliciosos, root, (sin contraseña). */   
 
     function conectar() 
     {
