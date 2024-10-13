@@ -1,7 +1,6 @@
 body{
     margin:0;
     padding:0;
-    height:100%;
 }
 
 .home {
@@ -95,7 +94,7 @@ body{
     
 .CUPCAKES{
     font-family: jockey one;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     font-size: auto;
     color: white;
@@ -111,7 +110,7 @@ body{
 .CUPCAKESTEXTO{
     padding: 14%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     width: 100%;
     top: 0%;
@@ -126,7 +125,7 @@ body{
     grid-area: 1 / 2 / 2 / 3; }
 .tortas{
     font-family: jockey one;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(0, 0, 0, 0.95);
         position: absolute;
         font-size: auto;
         color: white;
@@ -142,7 +141,7 @@ body{
 .textoTortas{
         padding: 6%;
         color: white;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(0, 0, 0, 0.95);
         position: absolute;
         width: 100%;
         top: 0%;
@@ -157,7 +156,7 @@ body{
     grid-area: 2 / 2 / 3 / 3; }
     .postres{
         font-family: jockey one;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(0, 0, 0, 0.95);
         position: absolute;
         font-size: auto;
         color: white;
@@ -173,7 +172,7 @@ body{
 .textoPostres{
         padding: 7.5%;
         color: white;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(0, 0, 0, 0.95);
         position: absolute;
         width: 100%;
         top: 0%;
@@ -369,6 +368,14 @@ body{
 @media(max-width: 850px)  
     /*responsive de index*/
 {
+    .redi{
+        font-size: 100%;
+        width: 26vw;
+    }
+    .navBar, .navBarFix{
+        height: 7vh;
+    }
+
     .home {
         height: auto; 
         width: 100vw;
@@ -379,11 +386,10 @@ body{
     .container-grid{
         width: auto;
         height: auto;
-        margin: 5%;
-      
+
     }
     .grid-inicio {
-        width: auto;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -399,8 +405,81 @@ body{
         justify-content: space-evenly;
         flex-direction: column;
     }
+
     .ft {
-        width: 25%;
+        font-size: 80%;
+        margin: 4%;
+    }
+
+    .slider-box1 {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .slider-box2
+    {
+        width: 100%;
+        margin: 0;
+        height: 250px;
+}
+    .CUPCAKESTEXTO{
+        font-size: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .textoTortas{
+        font-size: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .textoPostres{
+        font-size: 75%;
+        display: flex;
+        align-items: center;
+    }
+    .CUPCAKES, .tortas, .postres{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    #primerFT{
+        display: none;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 850px)  
+{
+    .redi{
+        font-size: 95%;
+    }
+    .grid-inicio{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .container-grid{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-box1 {
+        margin: 0;
+        height: auto;
+    }
+    .slider-box2
+    {
+        margin: 0;
+        height: 200px;
+}
+    .CUPCAKES, .tortas, .postres{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
     }
 
 }
@@ -420,9 +499,7 @@ body{
         justify-content: center;
 
     }
-    .ft {
-        width: 25%;
-    }
+
     .infos{
         width: 80vw;
     }
