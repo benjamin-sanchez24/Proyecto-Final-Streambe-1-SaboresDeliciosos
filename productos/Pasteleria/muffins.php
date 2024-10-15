@@ -90,9 +90,9 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 <div class="ejemplares">
 <?php foreach($resultado as $columns) { 
             $id = $columns['id'];
-            $imagenBinaria = $columns['imagen']; // Esto es el BLOB
+            $imagenBinaria = $columns['imagen']; 
             $imagenBase64 = base64_encode($imagenBinaria);
-            $tipoImagen = 'image/jpeg'; // Cambia esto si es necesario
+            $tipoImagen = 'image/jpeg'; 
         ?>
     <div class="ejemplar">
             <div class="ejemplarImagen">
